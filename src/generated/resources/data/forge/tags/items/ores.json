@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "manafield:overworld_azure_ore",
+    "manafield:netherrack_azure_ore",
+    "manafield:endstone_azure_ore",
+    "manafield:deepslate_azure_ore"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "manafield:block/endstone_azure_ore"
+  }
+}
