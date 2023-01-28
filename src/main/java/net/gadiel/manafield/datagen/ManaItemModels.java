@@ -18,5 +18,8 @@ public class ManaItemModels extends ItemModelProvider {
         withExistingParent(Registration.NETHERRACK_AZURE_ORE_ITEM.getId().getPath(), modLoc("block/netherrack_azure_ore"));
         withExistingParent(Registration.ENDSTONE_AZURE_ORE_ITEM.getId().getPath(), modLoc("block/endstone_azure_ore"));
         withExistingParent(Registration.DEEPSLATE_AZURE_ORE_ITEM.getId().getPath(), modLoc("block/deepslate_azure_ore"));
+
+        singleTexture(Registration.RAW_AZURE.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/raw_azure"));
+        singleTexture(Registration.AZURE_INGOT.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/azure_ingot"));
     }
 }

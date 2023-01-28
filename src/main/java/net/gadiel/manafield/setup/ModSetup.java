@@ -13,6 +13,7 @@ public class ModSetup {
             return new net.minecraft.world.item.ItemStack(Items.EMERALD);
         }
     };
+
     public static void init(FMLCommonSetupEvent event) {
 
     }

@@ -10,21 +10,30 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ManaItemTags extends ItemTagsProvider {
 
-        public ManaItemTags(DataGenerator generator, BlockTagsProvider blockTags, ExistingFileHelper helper) {
-            super(generator, blockTags, ManaField.MODID, helper);
-        }
+    public ManaItemTags(DataGenerator generator, BlockTagsProvider blockTags, ExistingFileHelper helper) {
+        super(generator, blockTags, ManaField.MODID, helper);
+    }
 
-        @Override
-        protected void addTags() {
-            tag(Tags.Items.ORES)
-                    .add(Registration.OVERWORLD_AZURE_ORE_ITEM.get())
-                    .add(Registration.NETHERRACK_AZURE_ORE_ITEM.get())
-                    .add(Registration.ENDSTONE_AZURE_ORE_ITEM.get())
-                    .add(Registration.DEEPSLATE_AZURE_ORE_ITEM.get());
-        }
+    @Override
+    protected void addTags() {
+        tag(Tags.Items.ORES)
+                .add(Registration.OVERWORLD_AZURE_ORE_ITEM.get())
+                .add(Registration.NETHERRACK_AZURE_ORE_ITEM.get())
+                .add(Registration.ENDSTONE_AZURE_ORE_ITEM.get())
+                .add(Registration.DEEPSLATE_AZURE_ORE_ITEM.get());
 
-        @Override
-        public String getName() {
-            return "ManaField Tags";
-        }
+        tag(Tags.Items.INGOTS)
+                .add(Registration.AZURE_INGOT.get());
+
+        tag(Registration.ORES_AZURE_ITEM)
+                .add(Registration.OVERWORLD_AZURE_ORE_ITEM.get())
+                .add(Registration.NETHERRACK_AZURE_ORE_ITEM.get())
+                .add(Registration.ENDSTONE_AZURE_ORE_ITEM.get())
+                .add(Registration.DEEPSLATE_AZURE_ORE_ITEM.get());
+    }
+
+    @Override
+    public String getName() {
+        return "ManaField Tags";
+    }
 }

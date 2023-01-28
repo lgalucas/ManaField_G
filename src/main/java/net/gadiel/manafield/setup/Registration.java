@@ -1,10 +1,16 @@
 package net.gadiel.manafield.setup;
 
+import net.gadiel.manafield.ManaField;
+import net.gadiel.manafield.datagen.ManaRecipes;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -37,6 +43,14 @@ public class Registration {
     public static final RegistryObject<Item> ENDSTONE_AZURE_ORE_ITEM = fromBlock(ENDSTONE_AZURE_ORE);
     public static final RegistryObject<Block> DEEPSLATE_AZURE_ORE = BLOCKS.register("deepslate_azure_ore", () -> new Block(BLOCK_PROPERTIES));
     public static final RegistryObject<Item> DEEPSLATE_AZURE_ORE_ITEM = fromBlock(DEEPSLATE_AZURE_ORE);
+
+
+    public static final RegistryObject<Item> RAW_AZURE = ITEMS.register("raw_azure", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> AZURE_INGOT = ITEMS.register("azure_ingot", () -> new Item(ITEM_PROPERTIES));
+
+    public static final Tags.IOptionalNamedTag<Block> ORES_AZURE = BlockTags.createOptional(new ResourceLocation(ManaField.MODID, "azure_ores"));
+    public static final Tags.IOptionalNamedTag<Item> ORES_AZURE_ITEM = ItemTags.createOptional(new ResourceLocation(ManaField.MODID, "azure_ores"));
+
 
     // Conveniance function: Take a RegistryObject<Block> and make a corresponding RegistryObject<Item> from it
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
