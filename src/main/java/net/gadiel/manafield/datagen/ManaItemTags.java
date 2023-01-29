@@ -34,6 +34,6 @@ public class ManaItemTags extends ItemTagsProvider {
 
     @Override
     public String getName() {
-        return "ManaField Tags";
+        return "manafield Tags";
     }
 }

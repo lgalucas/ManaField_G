@@ -42,6 +42,6 @@ public class ManaBlockTags extends BlockTagsProvider {
 
     @Override
     public String getName() {
-        return "ManaField Tags";
+        return "manafield Tags";
     }
 }

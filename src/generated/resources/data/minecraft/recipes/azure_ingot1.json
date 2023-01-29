@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "manafield:azure_ores"
+  },
+  "result": "manafield:azure_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}

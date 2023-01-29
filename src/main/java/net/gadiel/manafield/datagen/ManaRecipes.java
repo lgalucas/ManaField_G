@@ -25,7 +25,7 @@ public class ManaRecipes extends RecipeProvider {
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.RAW_AZURE.get()),
                         Registration.AZURE_INGOT.get(), 0.0f, 100)
-                .unlockedBy("has_chunk", has(Registration.RAW_AZURE.get()))
+                .unlockedBy("has_raw_ore", has(Registration.RAW_AZURE.get()))
                 .save(consumer, "azure_ingot2");
     }
 }

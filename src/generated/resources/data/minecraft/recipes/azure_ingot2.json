@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "manafield:raw_azure"
+  },
+  "result": "manafield:azure_ingot",
+  "experience": 0.0,
+  "cookingtime": 100
+}

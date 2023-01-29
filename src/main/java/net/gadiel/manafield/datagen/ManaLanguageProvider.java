@@ -15,7 +15,7 @@ public class ManaLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add("itemGroup." + TAB_NAME, "ManaField");
+        add("itemGroup." + TAB_NAME, "Mana Field");
         add(Registration.OVERWORLD_AZURE_ORE.get(), "Azure Ore");
         add(Registration.NETHERRACK_AZURE_ORE.get(), "Netherrack Azure Ore");
         add(Registration.ENDSTONE_AZURE_ORE.get(), "Endstone Azure Ore");
